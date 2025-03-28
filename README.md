@@ -22,4 +22,4 @@ So I developed the second version([version v2](https://github.com/yangning1123/A
 + Data Quality Check. I noticed that there is some error data in the Archive data. LTE shouldn't contain 900mhz frequency band, but there is a record, it sould be rectified or droped before transformation.
 + Table Lifecycle Management. Setup table lifecycle or archive out-dated data.
 + Completely Automation. Directly connect business tables or get data from REST API into our dimensional table to get acknowledge whether the technology is expanding. Thus we don't even need to maintain the dimensional table by manpower.
-
++ Paralle Processing Optimization. Currently, we merge the 3 technology datasets into One DataFrame, if the dataset is big enough, we can create 3 DFs, letting them compute in parallel.
